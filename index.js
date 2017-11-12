@@ -1,4 +1,3 @@
-const API_KEY='AIzaSyDXwcoDfCkDCScAfKYAYQo3lFL4-3h1jy0';
 
 
    function previewFile(){
@@ -7,11 +6,11 @@ const API_KEY='AIzaSyDXwcoDfCkDCScAfKYAYQo3lFL4-3h1jy0';
        var reader  = new FileReader();
 
        reader.onloadend = function () {
+           console.log(reader.result)
            preview.src = reader.result
        }
        if (file) {
            reader.readAsDataURL(file) //reads the data as a URL
-           console.log(reader.readAsDataURL(file))
        } else {
            preview.src = ""
        }
