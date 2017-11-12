@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios'
 
-const API_KEY = 'AIzaSyDXwcoDfCkDCScAfKYAYQo3lFL4-3h1jy0'
 
 class App extends React.Component {
   componentDidMount() {
